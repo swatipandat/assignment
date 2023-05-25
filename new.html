@@ -74,7 +74,7 @@
 			const input = document.getElementById('inputList').value;
 			const numbers = parseNumbers(input);
 			const sortedList = numbers.sort((a, b) => a - b);
-			document.getElementById('output').textContent = `Sorted List: ${sortedList.join(', ')}`;
+			document.getElementById("resp").innerHTML = `Sorted List: ${sortedList.join(', ')}`;
 		}
 
 		function min() {
