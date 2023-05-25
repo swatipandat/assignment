@@ -71,10 +71,11 @@
 			}
 		}
 		function sort() {
-			const numbers = parseNumbers(input);
-  const sortedList = numbers.sort((a, b) => a - b);
-  document.getElementById('output').textContent = `Sorted List: ${sortedList.join(', ')}`;
-}
+			  const input = document.getElementById('inputList').value;
+                          const numbers = parseNumbers(input);
+                          const sortedList = numbers.sort((a, b) => a - b);
+                          document.getElementById('output').textContent = `Sorted List: ${sortedList.join(', ')}`;
+
 		}
 		function min() {
 			arr.sort(function (a, b) { return a - b });
