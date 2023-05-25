@@ -70,11 +70,11 @@
 				}
 			}
 		}
-		function sort() {
-			  const input = document.getElementById('inputList').value;
-			  const numbers = parseNumbers(input);
-			  const sortedList = numbers.sort((a, b) => a - b);
-			  document.getElementById('output').textContent = `Sorted List: ${sortedList.join(', ')}`;
+		function sortList() {
+			const input = document.getElementById('inputList').value;
+			const numbers = parseNumbers(input);
+			const sortedList = numbers.sort((a, b) => a - b);
+			document.getElementById('output').textContent = `Sorted List: ${sortedList.join(', ')}`;
 		}
 
 		function min() {
@@ -98,7 +98,7 @@
 			<input type="number" class="box" id="val" placeholder="-----Enter the Values-----">
 			<button onclick="add()" class="bt">Insert</button><br><br>
 			<div id="res" class="box" style="width: 70%;">-----Blank List-----</div><br>
-			<button onclick="sort()" class="bt">Sort</button>
+			<button onclick="sortList()" class="bt">Sort</button>
 			<button onclick="min()" class="bt">Minimum</button>
 			<button onclick="avg()" class="bt">Average</button><br><br>
 			<div id="resp" class="box" style="width: 70%;">-----Answer-----</div>
