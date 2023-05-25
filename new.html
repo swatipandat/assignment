@@ -70,9 +70,8 @@
 				}
 			}
 		}
-		function sortList() {
-			const input = document.getElementById('inputList').value;
-			const numbers = parseNumbers(input);
+		function sort() {
+// 			const numbers = parseNumbers(input);
 			const sortedList = numbers.sort((a, b) => a - b);
 			document.getElementById("resp").innerHTML = `Sorted List: ${sortedList.join(', ')}`;
 		}
